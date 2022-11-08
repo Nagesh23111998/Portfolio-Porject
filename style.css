@@ -9,8 +9,40 @@
     overflow: hidden;
 }
 
+.navbar {
+    background-color: #171c25;
+    display: flex;
+    width: 100vw;
+    height: 4vw;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.navItem {
+    padding: 0px 26px;
+    font-size: 1.5rem;
+}
+.navbar h1{
+    margin-left: 20px;
+}
+.navItem a {
+    text-decoration: none;
+    color: white;
+}
+
 .salute {
-    height: 100vh;
+    height: 120vh;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -26,12 +58,12 @@
 
 .saluteText {
     color: #333;
-    font-size: 60vw;
+    font-size: 50vw;
     cursor: default;
 }
 
 .saluteImg {
-    width: 87%;
+    width: 75%;
 }
 
 .nameContainer {
@@ -248,6 +280,61 @@
 .githubSm {
     display: none;
 }
+
+/* ..HomeIntro*/
+.HomeIntro{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.HomeIntro h1 span{
+    color: red;
+}
+.HomeIntro img{
+    width: 15%;
+}
+.homeIntroText{
+    line-height: 12vh;
+}
+.homeIntroLines{
+    font-size: 1.2rem;
+}
+.homeIntroLines i{
+    color: red;
+}
+
+/* connect me  */
+.connectMe{
+    color: white;
+    text-align: center;
+    height: 80vh;
+    width: 100vw;
+    
+
+}
+.connectMe h4 span{
+    color: red;
+}
+.siteimg{
+    width: 3vw;
+    height: 6vh;
+   padding: 10px 13px;
+   margin-top: 23px;
+   margin: 19px;
+   border-radius: 50%;
+   background-color: white;
+   box-shadow: 0px 0px 24px red;
+   transition: 0.1s ease-in;
+}
+
+.siteimg:hover{
+   box-shadow: 0px 0px 50px rgb(249, 249, 249);
+   border: 2px solid red;
+}
+
 
 @media screen and (max-width:1024px) {
     .projects {
