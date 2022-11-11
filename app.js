@@ -23,3 +23,30 @@ window.addEventListener('scroll',()=>{
     laptop.style.transform = `translateY(calc(615vh - ${offsetY}px)`
     phone[1].style.transform = `translateX(calc(760vh - ${offsetY}px)`
 })
+
+//Say Namste according to day period
+let namaste  = document.getElementById("namaste")
+
+
+let date = new Date()
+let hours = date.getHours()
+
+
+if(hours>0 && hours < 3){
+namaste.innerText = "Good Night"
+}
+else if(hours>=3 && hours < 6){
+    namaste.innerText = "Hey meet me Early Morning !"
+}
+else if(hours>=6 && hours < 12){
+    namaste.innerText = "Good Morning !"
+}
+else if(hours>=12 && hours < 15){
+    namaste.innerText = "Good Afternoon"
+}
+else if(hours>=15 && hours < 21){
+    namaste.innerText = "Good Evening !"
+}
+else if(hours>=21 && hours <=24) {
+    namaste.innerText = "Good Night !"
+}
