@@ -123,6 +123,8 @@
 .projectsTitle {
     font-size: 10vw;
     color: #333;
+    position: relative;
+    top: 19vh;
 }
 
 .project {
@@ -161,7 +163,7 @@
 }
 
 .projectDetail {
-    flex: 1;
+    flex: 4;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,8 +171,9 @@
 }
 
 .projectTitle {
-    font-size: 7vw;
+    font-size: 6vw;
     color: #555;
+   
 }
 
 .projectDesc {

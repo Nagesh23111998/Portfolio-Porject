@@ -42,7 +42,7 @@ else if(hours>=6 && hours < 12){
     namaste.innerText = "Good Morning !"
 }
 else if(hours>=12 && hours < 15){
-    namaste.innerText = "Good Afternoon"
+    namaste.innerText = "Good Afternoon !"
 }
 else if(hours>=15 && hours < 21){
     namaste.innerText = "Good Evening !"
