@@ -41,6 +41,7 @@
 
 .navbar h1 {
     margin-left: 20px;
+    font-size: 1.4vw;
 }
 
 .salute {
@@ -59,15 +60,15 @@
 }
 
 .saluteText {
-    color: #333;
+    color: #ffc5c5;
     font-size: 29vw;
-    line-height: 43vh;
+    line-height: 52vh;
     margin-left: 12vh;
     cursor: default;
 }
 
 #namaste {
-    color: #333;
+    color: #bf87ff;
     font-size: 5vw;
     margin-left: 12vh;
     cursor: default;
@@ -87,7 +88,7 @@
 .name {
     flex-wrap: wrap;
     font-size: 10vw;
-    column-rule: #333;
+    column-rule: #ffc5c5;
     cursor: default;
     text-align: center;
     line-height: 100vh;
@@ -106,24 +107,31 @@
 }
 
 .jobTitle {
-    color: #333;
+    color: #95b5f1;
     line-height: 100vh;
     font-size: 10vw;
     cursor: default;
+}
+
+.DesignerText {
+    color: #200c36;
+
 }
 
 .projects {
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 30vh;
+    gap: 2vh;
     padding: 0px 100px;
+    position: absolute;
+    top: 450px;
 }
 
 .projectsTitle {
-    font-size: 10vw;
-    color: #333;
-    position: relative;
+    font-size: 8vw;
+    margin-left: 23px;
+    position: absolute;
     top: 19vh;
 }
 
@@ -173,7 +181,15 @@
 .projectTitle {
     font-size: 6vw;
     color: #555;
-   
+
+}
+
+.project:first-of-type .projectTitle {
+    display: none;
+}
+
+.project:first-of-type .projectDetail .projectTitle {
+    display: block;
 }
 
 .projectDesc {
@@ -192,6 +208,7 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    text-decoration: none;
 }
 
 .projectButton::after {
@@ -205,12 +222,16 @@
     align-items: center;
     justify-content: center;
     background-color: #555;
-    color: #333;
+    color: #ffc5c5;
     transition: 1s;
 }
 
 .projectButton:hover.projectButton::after {
     transform: translateX(100%);
+}
+
+.project:first-of-type+.project .phone {
+    display: none;
 }
 
 .laptop {
@@ -249,7 +270,7 @@
 
 .githubTitle {
     font-size: 100px;
-    color: #333;
+    color: #ffc5c5;
 }
 
 .dates {
@@ -364,6 +385,7 @@
         font-size: 1rem;
         flex-wrap: wrap;
         align-items: center;
+        height: 6vh;
         width: 100vw;
         justify-content: center;
         margin: 0;
@@ -375,6 +397,7 @@
 
     .navbar h1 {
         margin-left: 0px;
+        font-size: 2.4vw;
     }
 
     .navItem {
@@ -416,18 +439,35 @@
         line-height: 2vh;
         font-size: 2.5vw;
     }
+
     .HomeIntro img {
         width: 30%;
     }
 
+    .projectsTitle {
+        top: 9vh;
+        margin-left: 0px;
+        text-align: center;
+        padding: 0px 6px;
+    }
+
     .projects {
+        top: 23vh;
         padding: 0px 30px;
         text-align: center;
+        gap: 8vh;
+        overflow: auto;
     }
 
     .project {
+        top: 9vh;
         flex-direction: column;
         height: max-content;
+        gap: 3vh;
+    }
+
+    .projectDetail {
+        gap: 9px;
     }
 
     .project:nth-child(2n) {
@@ -437,6 +477,29 @@
     .phone,
     .laptop {
         transform: none !important;
+    }
+
+    .project:first-of-type .projectTitle {
+        display: block;
+    }
+
+    .project:first-of-type .projectDetail .projectTitle {
+        display: none;
+    }
+
+    .project:first-of-type+.project .laptop {
+        display: none;
+    }
+
+    .project:first-of-type+.project .phone {
+        display: block;
+    }
+
+    .projectButton {
+        font-size: 3vh;
+        margin: 32px 59px;
+        display: flex;
+        justify-content: center;
     }
 
     .githubChart {

@@ -19,7 +19,7 @@
                 <a href="./about.html" class="navItem">About</a>
                 <a href="./projects.html" class="navItem">Projects</a>
                 <a href="./My_Resume.pdf" class="navItem">Resume</a>
-                <a href="https://github.com/Nagesh23111998" target="_blank" class="navItem">Github</a>
+                <a href="https://github.com/NageshMohurle" target="_blank" class="navItem">Github</a>
             </div>
         </div>
         <!-- GITHUB -->
@@ -45,7 +45,7 @@
             </div>
             <div class="githubSm">
                 <a href="" class="href">
-                    <img src="./img/git.png" alt="">
+                    <a href="https://github.com/NageshMohurle" target="_blank"><img src="./img/git.png" alt=""></a>
                 </a>
                 <h2>Find Me on Github</h2>
             </div>
@@ -69,7 +69,9 @@
                 79, 80, 118, 119, 159, 160, 161, 162, 200, 201, 202, 203, 283, 241, 242, 282,
                 283, 284, 285, 323, 324, 325, 326,
             ]
-            const el = document.createElement('div')
+            const el = document.createElement('a')
+            el.href = "https://github.com/NageshMohurle"
+            el.target = "_blank"
             el.classList = list.includes(i) ? "box active" : "box"
             boxContainer.appendChild(el)
         }
