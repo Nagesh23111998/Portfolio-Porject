@@ -12,13 +12,14 @@
 .navbar {
     background-color: #171c25;
     display: flex;
-    width: 100vw;
-    height: 12vh;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 15vh;
     justify-content: space-between;
     align-items: center;
     color: white;
     position: fixed;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     z-index: 1;
     overflow: hidden;
 }
@@ -27,28 +28,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
-
-
+    margin-right: 1.2rem;
 }
 
-.navItem {
-    padding: 0px 26px;
-    padding: 0px 26px;
+.navbar h1 {
+    margin-left: 1.2rem;
+    font-size: 1.4rem;
+}
+
+.navbar a {
+    /* padding: 0px 21px; */
+    margin-right: 1.4rem;
     text-decoration: none;
     color: white;
 }
 
-.navbar h1 {
-    margin-left: 20px;
-    font-size: 1.4vw;
+.navbar a:hover {
+    color: rgb(236, 232, 41);
 }
 
-.salute {
+.navbar .nav a>span {
+    margin-right: 0.5rem;
+    font-size: 1.3rem;
+}
+
+
+.solute {
     height: 125vh;
     display: flex;
     align-items: center;
     overflow: hidden;
+    font-weight: bold;
+
 }
 
 .saluteTextContainer {
@@ -56,27 +67,34 @@
 }
 
 .saluteImgContainer {
-    flex: 1;
+    flex: 2;
+}
+
+.saluteImgContainer img {
+    /* margin-right: 14rem; */
+    /* height: 30; */
 }
 
 .saluteText {
+    transition: 2s ease-in-out;
     color: #ffc5c5;
-    font-size: 29vw;
-    line-height: 52vh;
+    font-size: 4vw;
+    /* line-height: 52vh; */
     margin-left: 12vh;
     cursor: default;
 }
 
 #namaste {
+    margin-top: 10px;
     color: #bf87ff;
-    font-size: 5vw;
+    font-size: 4vw;
     margin-left: 12vh;
     cursor: default;
 }
 
 
 .saluteImg {
-    width: 75%;
+    width: 40%;
 }
 
 .nameContainer {
@@ -93,6 +111,8 @@
     text-align: center;
     line-height: 100vh;
 }
+
+
 
 .jobTitleContainer {
     height: 100vh;
@@ -258,65 +278,6 @@
     display: none;
 }
 
-.githubContainer {
-
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-.githubTitle {
-    font-size: 100px;
-    color: #ffc5c5;
-}
-
-.dates {
-    padding: 10px;
-    color: #555;
-    font-size: 12px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.githubChart {
-    width: 820px;
-    text-align: center;
-}
-
-.boxContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-
-}
-
-.box {
-    width: 15px;
-    height: 15px;
-    background-color: #171c25;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 1s ease-in-out;
-}
-
-.active:nth-child(4n) {
-    background-color: #1bbc49;
-}
-
-.githubChart:hover .active:nth-child(2n+1) {
-    background-color: #265b19;
-}
-
-.githubChart:hover .active:nth-child(2n) {
-    background-color: #3b8e52;
-}
-
-.githubSm {
-    display: none;
-}
 
 /* ..HomeIntro*/
 .HomeIntro {
@@ -328,20 +289,23 @@
     height: 100vh;
 }
 
+.HomeIntro .homeIntroText {
+    font-weight: bold;
+    width: 70%;
+    line-height: 2;
+}
+
 .HomeIntro h1 span {
     color: red;
 }
 
 .HomeIntro img {
-    width: 15%;
-}
+    width: 25%;
 
-.homeIntroText {
-    line-height: 12vh;
 }
 
 .homeIntroLines {
-    line-height: 10vh;
+    /* line-height: 10vh; */
     font-size: 1.5vw;
 }
 
@@ -353,10 +317,8 @@
 .connectMe {
     color: white;
     text-align: center;
-    height: 80vh;
+    height: 30vh;
     width: 100vw;
-
-
 }
 
 .connectMe h4 span {
@@ -380,25 +342,30 @@
     border: 2px solid red;
 }
 
+
+/* -----------------------media-screen------------------- */
+
 @media screen and (max-width:1024px) {
     .navbar {
         font-size: 1rem;
         flex-wrap: wrap;
         align-items: center;
-        height: 6vh;
-        width: 100vw;
+        height: 10vh;
+        width: 100%;
         justify-content: center;
         margin: 0;
     }
+
 
     .nav {
         margin-right: 0px;
     }
 
     .navbar h1 {
-        margin-left: 0px;
-        font-size: 2.4vw;
+        margin-left: 1.2rem;
+        /* font-size: 1.4rem; */
     }
+
 
     .navItem {
         padding: 0px 13px;
@@ -406,10 +373,10 @@
     }
 
     .saluteText {
-        line-height: 30vh;
+        /* line-height: 30vh; */
     }
 
-    .saluteImgContainer {
+    .saluteImgContainar {
         flex: 2;
     }
 
@@ -427,21 +394,24 @@
         justify-content: center;
         align-items: center;
         width: 100vw;
-        height: 50vh;
+        height: 100vh;
+
     }
 
     .homeIntroText {
-        line-height: 5vh;
-        margin-left: 12px;
+        width: 100%;
+        line-height: 2;
+        height: 20vh;
+        font-size: 1rem;
     }
 
     .homeIntroLines {
-        line-height: 2vh;
-        font-size: 2.5vw;
+        font-size: 1rem;
     }
 
     .HomeIntro img {
         width: 30%;
+        margin-top: 9rem;
     }
 
     .projectsTitle {
@@ -523,7 +493,61 @@
     }
 
     .siteimg {
-        width: 7vw;
-        height: 3vh;
+        width: 4vw;
+        height: 7vh;
     }
+}
+
+
+@media screen and (max-width:784px) {
+    .HomeIntro img {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:628px) {
+    .HomeIntro img {
+        display: none;
+    }
+
+    .nav a .bi {
+        display: none;
+    }
+
+    .siteimg {
+        width: 7vw;
+        height: 7vh;
+    }
+}
+@media screen and (max-width:500px) {
+   .connectMe{
+    margin-top: 3rem;
+   }
+}
+
+@media screen and (max-width:460px) {
+    .navbar .nav a{
+        margin: 0rem;
+    }
+    .navbar .nav a>span {
+        /* margin-right: 0.5rem; */
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:460px) {
+    .navbar .nav a{
+        margin: 0rem;
+    }
+    .navbar .nav a>span {
+        /* margin-right: 0.5rem; */
+        font-size: 1rem;
+    }
+}
+
+footer h3 {
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }

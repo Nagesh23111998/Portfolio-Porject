@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -15,19 +17,106 @@
         <div class="navbar">
             <h1 class="Owner">Nageshwar Mohurle</h1>
             <div class="nav">
-                <a href="index.html" class="navItem">Home</a>
-                <a href="./about.html" class="navItem">About</a>
-                <a href="./projects.html" class="navItem">Projects</a>
-                <a href="./My_Resume.pdf" class="navItem">Resume</a>
-                <a href="https://github.com/NageshMohurle" target="_blank" class="navItem">Github</a>
+                <a href="index.html" class="navItem"> <span class="bi bi-house"></span>Home</a>
+                <a href="./about.html" class="navItem"><span class="bi bi-person"></span>About</a>
+                <a href="./projects.html" class="navItem"><span class="bi bi-collection"></span>Projects</a>
+                <a href="./My_Resume.pdf" class="navItem"><span class="bi bi-file-earmark-richtext"></span>Resume</a>
+                <a href="https://github.com/NageshMohurle" target="_blank" class="navItem"><span
+                        class="bi bi-github"></span>Github</a>
             </div>
         </div>
-        <div class="aboutMe">
-            <h1>My Name is Nageshwar</h1>
+        <div class="about-me">
+            <div class="about-text">
+                <h1>Know Who <span style="color:red">I'M</span></h1>
+                <p>Hi Everyone, I am <span style="color:red">Nageshwar Mohurle</span> from <span
+                        style="color:red">Chandrapur (MH)-442401, India.</span>
+                    <br>I have complited MCA from Gondwana University Ballarpur (MH).
+                </p>
+
+                <div>
+                    <p>Apart from coding, some other activities that I love to do!</p>
+                    <ul>
+                        <li><span class="far fa-hand-point-right"></span>Reading</li>
+                        <li><span class="far fa-hand-point-right"></span>Watching Podcast</li>
+                        <li><span class="far fa-hand-point-right"></span>Watching and Playing cricket</li>
+                    </ul>
+                    <p class="tag-line">"Strive to build things that make a difference!"</p>
+                    <p class="tag-line-writer">- Nagehswar Mohurle</p>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="./img/about-img.png" alt="" width="90%" height="350px">
+            </div>
         </div>
+
+        <!-- ---------------Skill-Set---------------------- -->
+        <section class="skills">
+            <h1 class="skills-heading" style="text-align: center;">
+                Professional <span style="color:red">Skillset </span>
+            </h1>
+            <div class="technologies">
+                <div class="topic">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="topic">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="topic">
+                    <i class="fa-brands fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="topic">
+                    <i class="fab fa-bootstrap"></i>
+                    <p>BootStrap</p>
+                </div>
+                <div class="topic">
+                    <i class="fa-brands fa-sass"></i>
+                    <p>Sass</p>
+                </div>
+                <div class="topic">
+                    <img src="./img/jquery.png" style="color: white;" alt="">
+                    <p>jQuery</p>
+                </div>
+                <div class="topic">
+                    <i class="fa-brands fa-react"></i>
+                    <p>React</p>
+                </div>
+                <div class="topic">
+                    <i class="fa-brands fa-node"></i>
+                    <p>Node.js</p>
+                </div>
+                <div class="topic">
+                    <img src="./img/mongodb.png" style="color: white;" alt="">
+                    <p>MongoDB</p>
+                </div>
+            </div>
+        </section>
+        <section class="Tools">
+            <h1 class="Tools-heading" style="text-align: center;">
+                <span style="color:red">Tools</span> I use
+            </h1>
+            <div class="Tools-box">
+                <div class="tool">
+                    <i class="fa-brands fa-github"></i>
+                    <p>Github</p>
+                </div>
+                <div class="tool">
+                    <img src="./img/visual-studio.png" alt="">
+                    <p>VS Code</p>
+
+                </div>
+                <div class="tool">
+                    <img src="./img/replit.png" alt="">
+                    <p>Replit</p>
+                </div>
+            </div>
+        </section>
+
         <!-- GITHUB -->
         <div class="githubContainer">
-            <h1 class="githubTitle">Want to see all projects</h1>
+            <h1 class="githubTitle">Want to see all my projects</h1>
             <div class="githubChart">
                 <div class="dates">
                     <span>jan</span>
@@ -53,6 +142,9 @@
                 <h2>Find Me on Github</h2>
             </div>
         </div>
+        <footer>
+            <h3>Coded by <span class="bi bi-heart-fill"></span> Nagehswar Mohurle</h3>
+        </footer>
     </div>
     <script>
         const boxContainer = document.querySelector(".boxContainer")
@@ -79,6 +171,7 @@
             boxContainer.appendChild(el)
         }
     </script>
+    <script src="https://kit.fontawesome.com/f879b6e716.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

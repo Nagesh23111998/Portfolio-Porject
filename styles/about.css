@@ -1,0 +1,218 @@
+.about-me {
+    height: 80vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+    align-items: center;
+}
+
+.about-me {
+    padding: 1rem;
+
+}
+
+.about-me .about-text {
+    color: white;
+    margin-left: 15vw;
+
+}
+
+.about-me .about-img {
+    margin-top: 7vh;
+}
+
+.about-me .about-text {
+    font-size: 1.2rem;
+
+}
+
+.about-me .about-text p {
+    margin-bottom: 1.5rem;
+}
+
+.about-me .about-text h1 {
+    margin-bottom: 1rem;
+}
+
+.about-me .about-text div>ul {
+    list-style-type: none;
+}
+
+.about-me .about-text div ul li {
+    margin: 10px;
+}
+
+.about-me .about-text div ul li .far {
+    margin-right: 5px;
+}
+
+.about-me .about-text div .tag-line {
+    color: rgb(177, 104, 245);
+}
+
+.about-me .about-text div .tag-line-writer {
+    color: rgb(177, 104, 245);
+    margin-left: 150px;
+}
+
+/* ---------sklls-set------- */
+
+.skills .skills-heading {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.skills .technologies {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    margin: 20px 100px 0px 100px;
+}
+
+.skills .technologies .topic {
+    width: 14vw;
+    height: 16vh;
+    border: 2px solid rgb(129, 129, 229);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 1s ease-in-out;
+}
+
+
+.skills .technologies .topic i {
+    font-size: 6rem;
+    color: white;
+    transition: 0.6s ease-in-out;
+}
+
+.skills .technologies .topic i:hover {
+    /* font-size: 7rem; */
+    /* transition:1s ease-in-out; */
+    color: white;
+    scale: 1.1;
+}
+
+.skills .technologies .topic img {
+    width: 5vw;
+    height: 14vh;
+    color: white;
+    transition: 0.6s ease-in-out;
+}
+
+.skills .technologies .topic img:hover {
+    scale: 1.2;
+}
+
+/* ------Tools--------- */
+
+.Tools {
+    color: white;
+    height:40vh;
+}
+
+.Tools .Tools-heading {
+    font-size: 2.5rem;
+}
+
+.Tools .Tools-box {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    margin: 20px 100px 0px 100px;
+}
+
+
+.Tools .Tools-box .tool {
+    width: 12vw;
+    height: 16vh;
+    border: 2px solid rgb(129, 129, 229);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 1s ease-in-out;
+}
+.Tools .Tools-box .tool img {
+    width: 6vw;
+    color: white;
+    transition: 0.6s ease-in-out;
+}
+.Tools .Tools-box .tool i {
+    font-size: 6rem;
+    color: white;
+    transition: 0.6s ease-in-out;
+}
+
+/* ------git-hub--------- */
+.githubContainer {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.githubTitle {
+    font-size: 4rem;
+    color: #ffc5c5;
+}
+
+.dates {
+    padding: 10px;
+    color: #555;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.githubChart {
+    width: 54vw;
+    text-align: center;
+}
+
+.boxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+
+}
+
+.box {
+    width: 15px;
+    height: 15px;
+    background-color: #171c25;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.active:nth-child(4n) {
+    background-color: #1bbc49;
+}
+
+.githubChart:hover .active:nth-child(2n+1) {
+    background-color: #265b19;
+}
+
+.githubChart:hover .active:nth-child(2n) {
+    background-color: #3b8e52;
+}
+
+.githubSm {
+    display: none;
+}
+
+/* ---------footer-------- */
+
+footer h3{
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
