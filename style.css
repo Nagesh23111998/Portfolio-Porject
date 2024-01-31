@@ -415,7 +415,7 @@
     }
 
     .projectsTitle {
-        top: 9vh;
+        top: 11vh;
         margin-left: 0px;
         text-align: center;
         padding: 0px 6px;
@@ -545,9 +545,11 @@
     }
 }
 
-footer h3 {
-    color: white;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
+footer{
+    background-color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+    height: 10vh;
 }
